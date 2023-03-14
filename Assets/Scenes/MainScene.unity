@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028408, g: 0.22571424, b: 0.30692363, a: 1}
+  m_IndirectSpecularColor: {r: 0.1802841, g: 0.22571425, b: 0.3069237, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5192,6 +5192,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e65d2c34ee29a64c8486e1553fe39a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  standardTurret:
+    preFab: {fileID: 1424133768192888811, guid: 30ea2703f8e384247b6304a5466bf270, type: 3}
+    cost: 100
+  missileLauncher:
+    preFab: {fileID: 8180356025322578114, guid: 40083e65cc938bb4ebb1ceee81b2cecc, type: 3}
+    cost: 300
 --- !u!1001 &575265189
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8675,6 +8681,7 @@ GameObject:
   - component: {fileID: 1002450294}
   - component: {fileID: 1002450293}
   - component: {fileID: 1002450295}
+  - component: {fileID: 1002450296}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -8726,8 +8733,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turretParent: {fileID: 1254737884}
-  standardTurretPrefab: {fileID: 1424133768192888811, guid: 30ea2703f8e384247b6304a5466bf270, type: 3}
-  missileTurretPrefab: {fileID: 8180356025322578114, guid: 40083e65cc938bb4ebb1ceee81b2cecc, type: 3}
+--- !u!114 &1002450296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002450292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54a1251f68b39964dbe2e5ce99d13123, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startMoney: 400
 --- !u!1001 &1006721430
 PrefabInstance:
   m_ObjectHideFlags: 0
