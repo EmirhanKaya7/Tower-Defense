@@ -28,6 +28,10 @@ public class BuildManager : MonoBehaviour
     {
         get { return turretToBuild != null; }
     }
+    public bool hasMoney
+    {
+        get { return GameDataManager.Money >= turretToBuild.cost; }
+    }
 
     public void BuildTurretOn(Node node)
     {
